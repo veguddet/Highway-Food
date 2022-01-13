@@ -246,11 +246,6 @@ const Home = ({ navigation }) => {
                 backgroundColor: COLORS.white
             }}
          >
-               {/* {renderHeader()} */}
-               {/* {renderSearchBar()} */}
-               {/* {renderSeeRecipeCard()}  */}
-               {/* {renderTrendingSection()} */}
-               {/* {renderCategoryHeader()} */}
             <FlatList 
                marginTop={10}
                data={dummyData.categories}

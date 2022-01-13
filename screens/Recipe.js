@@ -35,7 +35,7 @@ const Recipe = ({navigation, route}) => {
                 alignItems: 'flex-end',
                 justifyContent: 'space-between',
                 paddingHorizontal: SIZES.padding,
-                paddingBottom: 10
+                paddingBottom: 10,
             }}
             >
                 {/* Screen Overlay */}
@@ -387,7 +387,7 @@ const Recipe = ({navigation, route}) => {
                 paddingTop: 15,
                 paddingBottom: 15,
             }}
-            onPress={() => navigation.navigate("Cart")}
+            onPress={() => navigation.navigate("Cart", {cartItem: selectedRecipe})}
             >
                 <Text style={{
                      fontSize: 18,

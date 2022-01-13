@@ -1,7 +1,9 @@
 import React from 'react';
-import { Login, Recipe } from "./screens";
+import { Login, Recipe ,Splash} from "./screens";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from '@react-navigation/native';
+import {Provider} from 'react-redux';
+import { store } from "./redux/Store";
 
 import Tabs from "./navigation/tabs";
 
@@ -9,6 +11,8 @@ const Stack = createStackNavigator();
 
 const App = () => {
     return (
+        <Provider store = {store}>
+
         <NavigationContainer>
             <Stack.Navigator
                 screenOptions={{
@@ -30,6 +34,7 @@ const App = () => {
                 />
             </Stack.Navigator>
         </NavigationContainer>
+        </Provider>
     )
 }
 

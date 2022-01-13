@@ -10,5 +10,6 @@ export {
     COLORS, 
     SIZES, 
     FONTS,
-    dummyData
+    dummyData,
+    
 }
